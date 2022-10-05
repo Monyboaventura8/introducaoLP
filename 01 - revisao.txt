@@ -1,0 +1,16 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    cout << "LÓGICA DE PROGRAMAÇÃO";
+    cout << "\n\nAula 01:";
+    cout << "\n- Comando cout";
+    cout << "\n- Introdução às variáveis";
+    
+    cout << "\n\nAula 02:";
+    cout << "\n- Variáveis";
+    cout << "\n- Comandos de entrada";
+
+}

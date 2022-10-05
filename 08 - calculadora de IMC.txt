@@ -1,0 +1,30 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    float peso;
+    float altura;
+    float imc;
+    
+    cout << "Digite seu peso: ";
+    cin >> peso;
+    
+    cout << "Digite sua altura: ";
+    cin >> altura;
+    
+    imc = peso / ( altura * altura );
+    
+    if( imc <= 18.5 ){
+        cout << "Você está abaixo do peso!";
+    }
+    if( imc > 18.5 && imc < 25 ){
+        cout << "Você está no seu peso ideal!";
+    }
+    if( imc >= 25 ){
+        cout << "Você está acima do peso.";
+    }
+    
+
+}

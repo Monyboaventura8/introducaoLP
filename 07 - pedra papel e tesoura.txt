@@ -1,0 +1,68 @@
+
+#include <iostream>
+using namespace std;
+
+string resultado( int sistema, int jogador ){
+    
+    string resultado;
+    int calculo = sistema - jogador;
+    
+    if( calculo == -1 || calculo == 2 ){
+        resultado = "VITÓRIA";
+    }
+    if( calculo == 1 || calculo == -2 ){
+        resultado = "DERROTA";
+    }
+    if( sistema == jogador ){
+        resultado = "EMPATE";
+    }
+    
+    return resultado;
+    
+}
+
+string obtemTexto( int numero ){
+    
+    string texto;
+    
+    if( numero == 0 ){
+        texto = "Pedra";
+    }
+    if( numero == 1 ){
+        texto = "Papel";
+    }
+    if( numero == 2 ){
+        texto = "Tesoura";
+    }
+    
+    return texto;
+    
+}
+
+int geraNumeroAleatorio(){
+    int numero = time(0) % 3;
+    return numero;
+}
+
+int main() {
+
+    int sistema = geraNumeroAleatorio();
+    int jogador;
+    string mensagem_final;
+
+    cout << "\n\nEscolha uma opção: ";
+    cout << "\n0 - Pedra";
+    cout << "\n1 - Papel";
+    cout << "\n2 - Tesoura";
+    cout << "\nDigite: ";
+    cin >> jogador;
+    
+    mensagem_final = resultado( sistema, jogador );
+    
+    cout << "\nVocê escolheu " << obtemTexto( jogador ) << " e o sistema jogou " << obtemTexto( sistema );
+    
+    cout << "\n\n" << mensagem_final;
+    
+    main();
+
+}

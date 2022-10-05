@@ -1,0 +1,60 @@
+
+#include <iostream>
+using namespace std;
+
+const int total_quartos = 8;
+bool quartos[total_quartos];
+string nomes[ total_quartos ];
+
+void reservar(){
+    
+    int opcao;
+    
+    cout << "Escolha o quarto de 1 a 8: ";
+    cin >> opcao;
+    
+    if( quartos[opcao] == true ){
+        cout << "Este quarto já está ocupado por " << nomes[opcao];
+    }else{
+        
+        cout << "Digite o nome da reserva: ";
+        quartos[opcao] = true;
+        cin >> nomes[opcao];
+        
+    }
+    
+}
+
+void listar(){
+    
+    for( int i = 0; i < total_quartos; i++  ){
+        
+        if( quartos[i] == true ){
+            cout << "\nO quarto " << (i+1) << " está ocupado por " << nomes[i];
+        }else{
+            cout << "\nQuarto " << (i+1) << " disponível";
+        }
+        
+    }
+    
+}
+
+int main() {
+
+    int opcao;
+
+    cout << "\n\nEscolha uma opção:";
+    cout << "\n0 - Listar";
+    cout << "\n1 - Reservar";
+    cout << "\nDigite: ";
+    cin >> opcao;
+    
+    if( opcao == 0 ){
+        listar();
+    }else{
+        reservar();
+    }
+    
+    main();
+
+}

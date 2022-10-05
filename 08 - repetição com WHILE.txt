@@ -1,0 +1,23 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int contador = 0;
+
+    while( 1 > 0 ){
+        
+        cout << contador << " - Boa noite!\n";
+        
+        if( contador == 5 ){
+            cout << "\n-- CHEGOU NA METADE!\n\n";
+        }
+        
+        // Usar o += para adicionar valores
+        // Usar o ++ para adicionar 1
+        contador++;
+        
+    }
+
+}

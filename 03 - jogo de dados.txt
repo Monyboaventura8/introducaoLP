@@ -1,0 +1,35 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int resultado;
+    string resposta;
+    
+    // código para sortear números
+    srand(time(0));
+    resultado = (rand() % 6 + 1);
+
+    cout << "Bem-vindo ao Cassino";
+    cout << "\nTire 4 ou mais no dado para ganhar";
+    cout << "\n\nO resultado é: " << resultado;
+    cout << "\n\n";
+    
+    if( resultado >= 4 ){
+        cout << "Parabéns, você venceu!";
+    }else{
+        cout << "Que pena, você perdeu.";
+    }
+    
+    cout << "\n\nQuer jogar de novo? Resposta [s/n] : ";
+    cin >> resposta;
+    
+    if( resposta == "s" ){
+        main();
+    }
+
+}
+
+
+

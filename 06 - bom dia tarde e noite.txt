@@ -1,0 +1,24 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int horas;
+    
+    cout << "\n\nDigite que horas são agora: ";
+    cin >> horas;
+    
+    if( horas <= 12 ){
+        cout << "Bom dia!";
+    }
+    
+    if( horas >= 18 ){
+        cout << "Boa noite!";
+    }
+    
+    if( horas >= 13 && horas <= 17 ){
+        cout << "Boa tarde!";
+    }
+
+}

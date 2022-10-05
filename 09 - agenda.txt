@@ -1,0 +1,73 @@
+
+#include <iostream>
+using namespace std;
+
+bool agenda[29];
+
+
+void listar(){
+    
+    cout << "\n\n";
+    
+    string texto = "";
+    
+    texto += "---------------------\n";
+    texto += "D  S  T  Q  Q  S  S";
+    texto += "\n---------------------";
+    
+    for( int i = 0; i < 29; i++ ){
+
+        texto += " ";
+
+        if( i % 7 == 0 ){
+            texto += "\n";
+        }
+        
+        if( agenda[i] == true ){
+            if( i > 9 ){
+                texto += " ";
+            }
+            texto += "X";   
+        }else{
+            if( i < 9 ){
+                texto += "0";
+            }
+            texto += to_string(i+1);
+        }
+        
+    }
+    
+    texto += "\n---------------------";
+    
+    cout << texto;
+    
+}
+
+void registrar(){
+    
+    int opcao;
+    cout << "Escolha um dia de 1 a 30: ";
+    cin >> opcao;
+    agenda[opcao] = true;
+    
+}
+
+int main() {
+
+    int opcao;
+
+    cout << "\n\nEscolha uma opção:";
+    cout << "\n0 - Consultar agenda";
+    cout << "\n1 - Novo registro";
+    cout << "\nDigite: ";
+    cin >> opcao;
+    
+    if( opcao == 0 ){
+        listar();
+    }else{
+        registrar();
+    }
+    
+    main();
+
+}

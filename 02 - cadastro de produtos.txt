@@ -1,0 +1,39 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    string nome;
+    int preco_custo;
+    int preco_venda;
+    int quantidade;
+    
+    int total_venda;
+    int total_custo;
+    int lucro;
+    
+    cout << "CADASTRO DE PRODUTO\n";
+    
+    cout << "Nome do produto: ";
+    cin >> nome;
+    
+    cout << "Preço de custo: ";
+    cin >> preco_custo;
+    
+    cout << "Preço de venda: ";
+    cin >> preco_venda;
+    
+    cout << "Quantidade: ";
+    cin >> quantidade;
+    
+    total_venda = quantidade * preco_venda;
+    total_custo = quantidade * preco_custo;
+    lucro = total_venda - total_custo;
+    
+    cout << "\n\nRELATÓRIO\n";
+    cout << "\nTotal da venda R$ " << total_venda;
+    cout << "\nTotal do custo R$ " << total_custo;
+    cout << "\nLucro R$ " << lucro;
+    
+}

@@ -1,0 +1,18 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    string nome;
+    string sobrenome;
+    
+    cout << "Olá, digite o seu nome: ";
+    cin >> nome;
+    
+    cout << "Qual seu sobrenome? Digite: ";
+    cin >> sobrenome;
+    
+    cout << "Seja bem-vindo " << nome << " " << sobrenome;
+
+}

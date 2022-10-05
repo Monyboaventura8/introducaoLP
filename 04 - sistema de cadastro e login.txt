@@ -1,0 +1,34 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int resposta;
+    string nome;
+
+    cout << "Bem-vindo ao sistema.";
+    cout << "\nEscolha uma opção:";
+    cout << "\n1 - Cadastrar";
+    cout << "\n2 - Entrar";
+    cout << "\n3 - Sair";
+    cout << "\nDigite: ";
+    cin >> resposta;
+    
+    if( resposta == 3 ){
+        cout << "\n\nVocê saiu do sistema";
+        return 0;
+    }
+    
+    if( resposta == 1 ){
+        cout << "Informe os dados de cadastro:";
+    }
+    
+    if( resposta == 2 ){
+        cout << "Informe usuário e senha para continuar:";
+    }
+    
+
+}
+
+

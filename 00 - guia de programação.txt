@@ -1,0 +1,35 @@
+
+- Desktop
+	* > C# < ou Java
+
+- Web (internet)
+	INDICO 1°: * HTML e CSS (não é programação)
+	INDICO 2°: * JavaScript
+		° PhP
+		° React / Node
+
+- Mobile 
+	* JavaScript
+		° React Native
+	* Java / Kotlin
+	* F# / C comand
+
+- Curingas
+	* Python
+	* Ruby (internet)
+	* WordPress (criar sites - loja virtual) / loja integrada / bubble
+
+---- Banco de dados
+
+
+
+ONDE ESTUDAR?
+- Curso em Vídeo (Guanabara)
+- Rocketseat
+- Udemy (site)
+- Conrado Saud: youtube.com/conradosaud
+
+1.500 cursos de programação:
+https://github.com/arthurspk/guiadevbrasil
+
+

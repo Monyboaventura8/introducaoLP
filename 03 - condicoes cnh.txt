@@ -1,0 +1,32 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int idade;
+
+    cout << "Digite sua idade: ";
+    cin >> idade;
+    
+    if( idade > 100 ){
+        cout << "Digite uma idade válida...\n\n";
+        main();
+        return 0;
+    }
+    
+    if( idade >= 18 ){
+        cout << "Você já pode tirar a CNH.";
+    }else{
+        cout << "Idade insuficiente...";
+    }
+    
+    
+    if( idade >= 75 ){
+        cout << "\nPorém, faça os exames especiais.";
+    }
+
+}
+
+
+

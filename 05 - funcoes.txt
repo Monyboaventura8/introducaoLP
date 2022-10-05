@@ -1,0 +1,63 @@
+
+#include <iostream>
+using namespace std;
+
+void menu();
+void inicio();
+
+void login(){
+    cout << "\n\nTela de login! Digite o usuário e a senha.";
+    menu();
+}
+
+void cadastro(){
+    cout << "\n\nTela de cadastro de clientes!";
+    menu();
+}
+
+void menu(){
+    
+    int opcao;
+    
+    cout << "\nEscolha um destino";
+    cout << "\n1 - Cadastro";
+    cout << "\n2 - Login";
+    cout << "\n3 - Início";
+    cout << "\nDigite: ";
+    cin >> opcao;
+    
+    if( opcao == 1 ){
+        cadastro();
+    }
+    if( opcao == 2 ){
+        login();
+    }
+    if( opcao == 3 ){
+        inicio();
+    }
+    
+}
+
+void caneta() { cout << "\nCaneta BIC preta - R$ 0,50"; }
+void lapis()  { cout << "\nLápis de escrever - R$ 0,25"; }
+void caderno(){ cout << "\nCaderno de 100 páginas - R$ 5,50"; }
+
+void produto(){
+    caneta();
+    lapis();
+    caderno();
+}
+
+void inicio(){
+    cout << "Bem-vindo à página inicial";
+    produto();
+    
+    menu();
+}
+
+// Função inicial (principal)
+int main() {
+
+   inicio();
+    
+}

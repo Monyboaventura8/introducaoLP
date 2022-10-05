@@ -1,0 +1,35 @@
+
+#include <iostream>
+using namespace std;
+
+// Vetor de 4 posições (começa a contagem no ZERO)
+string nomes[3];
+
+void mostraNomes(){
+    cout << "Nome dos usuários cadastrados:";
+    cout << "\n" << nomes[0];
+    cout << "\n" << nomes[1];
+    cout << "\n" << nomes[2];
+    cout << "\n" << nomes[3];
+}
+
+int main() {
+    
+    nomes[0] = "Conrado";
+    nomes[1] = "Daniele";
+    nomes[2] = "-";
+    nomes[3] = "-";
+    
+    mostraNomes();
+    
+    cout << "\n\nAdicione um nome: ";
+    cin >> nomes[2];
+    
+    mostraNomes();
+    
+    cout << "\n\nAdicione um nome: ";
+    cin >> nomes[3];
+    
+    mostraNomes();
+
+}

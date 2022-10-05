@@ -1,0 +1,17 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int dia = 3;
+    int mes = 9;
+    int ano = 2022;
+
+    cout << dia << "/" << mes << "/" << ano;
+    
+    cout << "\n";
+    
+    cout << "Hoje é dia " << dia << " do mês " << mes << " de " << ano;
+
+}

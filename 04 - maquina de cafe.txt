@@ -1,0 +1,45 @@
+
+#include <iostream>
+using namespace std;
+
+float dinheiro = 0;
+
+int main() {
+
+    int opcao;
+    float dinheiro_digitado;
+
+    cout << "Bem-vindo ao Conradito Cafézito";
+    
+    cout << "\n\nDinheiro na máquina: " << dinheiro;
+    
+    cout << "\n\nEscolha uma opção:";
+    cout << "\n1 - Adicionar moeda";
+    cout << "\n2 - Escolher bebidas";
+    cout << "\nDigite: ";
+    cin >> opcao;
+    
+    if( opcao == 1 ){
+       cout << "Digite a quantidade: ";
+       cin >> dinheiro_digitado;
+       dinheiro = dinheiro + dinheiro_digitado;
+       main();
+       return 0;
+    }
+    
+    if( opcao == 2 ){
+        cout << "\n1 - Café (R$ 1.00)";
+        cout << "\n2 - Cappuccino (R$ 2.50)";
+        cout << "\n3 - Mocaccino (R$ 3.25)";
+        cout << "Digite: ";
+        cin >> opcao;
+        
+        // O simbolo && junta duas condições em uma só
+        if( opcao == 1 && dinheiro >= 1.0 ){
+            
+        }
+        
+    }
+ 
+}
+

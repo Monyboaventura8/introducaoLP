@@ -1,0 +1,21 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    string nome;
+    int media;
+    
+    cout << "Digite seu nome: ";
+    cin >> nome;
+    cout << "Digite a média: ";
+    cin >> media;
+    
+    if( media >= 6 ){
+        cout << "O aluno " << nome << " está APROVADO!";
+    }else{
+        cout << "O aluno " << nome << " está REPROVADO!";
+    }
+
+}

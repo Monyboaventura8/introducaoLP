@@ -1,0 +1,21 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    cout << "Bem-vindo ao CONRADITO CAFÉZITO;
+    cout << "\n";
+    cout << "* Os melhores sabores de café estão aqui*";
+    
+    cout << "\n\nConsulte nosso cardápio:";
+    cout << "\n- Bebidas quentes";
+    cout << "\n- Bebidas frias";
+    cout << "\n- Cookies";
+    
+    cout << "\n\n";
+    cout << "----------";
+    cout << "\nCONTATO:";
+    cout << "\nTelefone: 123456789";
+
+}

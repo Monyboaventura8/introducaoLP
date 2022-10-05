@@ -1,0 +1,36 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int mes;
+    int dia;
+    string horario;
+    
+    cout << "Bem-vindo a TAUM, companhia aérea";
+    cout << "\n\nCOMPRE SUA PASSAGEM";
+    cout << "\nMêses disponíveis:";
+    cout << "\n- 8 Agosto\n- 9 Setembro\n- 10 Outubro";
+    cout << "\n\nInforme o mês desejado: ";
+    cin >> mes;
+    
+    if( mes > 10 ){
+        cout << "Informe um mês válido";
+        return 0;
+    }
+    
+    cout << "Dias disponíveis de\n6 até 21 do mês " << mes;
+    cout << "\nInforme o dia desejado: ";
+    cin >> dia;
+    
+    cout << "Períodos do dia para o vôo:";
+    cout << "\n-Manhã\n-Tarde\n-Noite";
+    cout << "\nInforme o período desejado: ";
+    cin >> horario;
+    
+    cout << "COMPRA REALIZADA COM SUCESSO!";
+    cout <<"\n\nInformações da sua passagem:";
+    cout << "Viagem para o dia " << dia << " do mês " << mes << " de 2022 no período da " << horario;
+    
+}

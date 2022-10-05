@@ -1,0 +1,59 @@
+
+#include <iostream>
+using namespace std;
+
+// GLOBAL
+bool vagas[] = { false, false, false, false, false };
+
+
+void retirar(){
+    int opcao;
+    
+    cout << "Digite uma vaga de 0 a 4: ";
+    cin >> opcao;
+    
+    if( vagas[opcao] == true ){
+        cout << "VOCÊ RETIROU SUA VAGA!";
+        vagas[opcao] = false;
+    }else{
+        cout << "NÃO HÁ NINUGÉM AQUI";
+    }
+}
+
+void estacionar(){
+    
+    int opcao;
+    
+    cout << "Digite uma vaga de 0 a 4: ";
+    cin >> opcao;
+    
+    if( vagas[opcao] == false ){
+        cout << "VAGA DISPONÍVEL!";
+        vagas[opcao] = true;
+    }else{
+        cout << "NÃO DISPONÍVEL";
+    }
+    
+}
+
+int main() {
+
+    int opcao;
+
+    cout << "\n\nEstacionamento do Conradito";
+    cout << "\nEscolha uma opção:";
+    cout << "\n1 - Estacionar";
+    cout << "\n2 - Retirar";
+    cout << "\nDigite: ";
+    cin >> opcao;
+    
+    if( opcao == 1 ){
+        estacionar();
+    }
+    if( opcao == 2 ){
+        retirar();
+    }
+    
+    main();
+
+}

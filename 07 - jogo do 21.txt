@@ -1,0 +1,35 @@
+
+#include <iostream>
+using namespace std;
+
+int pontos;
+
+int geraNumero(){
+    int resultado = time(0) % 9 + 1;
+    return resultado;
+}
+
+int main() {
+    
+    int opcao;
+    
+    cout << "Você tem " << pontos << " pontos";
+    
+    cout << "\n\nEscolha uma opção: ";
+    cout << "\n0 - Parar";
+    cout << "\n1 - Continuar";
+    cout << "\nDigite: ";
+    cin >> opcao;
+    
+    if( opcao == 0 ){
+        cout << "\n\nVocê terminou o jogo com " << pontos << " pontos!";
+        return 0;
+    }
+    
+    int nova_carta = geraNumero();
+    cout << "Você baixou o número " << nova_carta << "\n";
+    pontos = pontos + nova_carta;
+    
+    main();
+
+}
